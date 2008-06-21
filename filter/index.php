@@ -1,6 +1,7 @@
 <?php 
 include('inc/header.php');
 ?>
+prooohnjn
 <title>coderszine.com : Demo Filter Search Result with Ajax, PHP & MySQL</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -12,6 +13,7 @@ include('inc/header.php');
 	<br>
 	<div class="row">		
 		<div class="form-group col-md-3">
+
 			<input type="text" class="search form-control" id="keywords" name="keywords" placeholder="By customer or item">			
 		</div>
 		<div class="form-group col-md-2">

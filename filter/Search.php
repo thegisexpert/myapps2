@@ -18,10 +18,10 @@ class Search{
         $sqlQuery .= array_key_exists("select",$sqlQueryConditions)?$sqlQueryConditions['select']:'*';
         $sqlQuery .= " from event, participant, participant_event";
 
-        //$query = "select * from event, participant, participant_event";
+        $sqlQuery  = "select * from event, participant, participant_event";
 
 
-
+        /***
         if(array_key_exists("where",$sqlQueryConditions)){
             $sqlQuery .= ' WHERE ';
             $i = 0;
@@ -49,7 +49,7 @@ class Search{
         }elseif(!array_key_exists("start",$sqlQueryConditions) && array_key_exists("limit",$sqlQueryConditions)){
             $sqlQuery .= ' LIMIT '.$sqlQueryConditions['limit']; 
         }
-
+        */
         echo  ($sqlQuery);
 		$searchResult = $this->db->query($sqlQuery);       
         if(array_key_exists("return_type",$sqlQueryConditions) && $sqlQueryConditions['return_type'] != 'all'){
